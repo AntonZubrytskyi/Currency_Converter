@@ -6,6 +6,7 @@ import {currencySelectStyle} from "../../UI/SelectInput/selectStyles";
 import {SelectOptions} from "../../types";
 import {ActionMeta, SingleValue} from "react-select";
 import {formatSelectOptions} from "../../helpers/formatSelectOptions";
+import {selectMessage} from "../../constants/select-values";
 
 
 interface CurrencyInputProps {
@@ -30,13 +31,6 @@ const CurrencyInput = ({
 
     const selectValue = {value: selectedCurrency, label: selectedCurrency};
 
-    // const currencyOptions = selectOptions.map(data => {
-    //     return {
-    //         value: data,
-    //         label: data
-    //     }
-    // })
-
     const currencyOptions = formatSelectOptions(selectOptions);
 
     return (
@@ -54,6 +48,7 @@ const CurrencyInput = ({
                 options={currencyOptions}
                 styles={currencySelectStyle}
                 selectTitle={selectTitle}
+                message={selectMessage}
             />
         </div>
     );

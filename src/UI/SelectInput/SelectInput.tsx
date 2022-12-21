@@ -10,6 +10,7 @@ interface SelectInputProps {
     onChange: (newValue: SingleValue<SelectOptions>, actionMeta: ActionMeta<SelectOptions>) => void;
     value: SelectOptions;
     selectTitle: string;
+    message: string;
 }
 
 const SelectInput = ({
@@ -18,6 +19,7 @@ const SelectInput = ({
                          onChange,
                          value,
                          selectTitle,
+                         message
                      }: SelectInputProps) => (
         <div className='select_container'>
             {selectTitle && <div className='select_title'>{selectTitle}</div>}
@@ -26,6 +28,7 @@ const SelectInput = ({
                 options={options}
                 styles={styles}
                 onChange={onChange}
+                noOptionsMessage={() => message}
             />
         </div>
     )
