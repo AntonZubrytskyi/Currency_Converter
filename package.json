@@ -1,4 +1,5 @@
 {
+  "homepage": "http://AntonZubrytskyi.github.io/Currency_Converter",
   "name": "converter",
   "version": "0.1.0",
   "private": true,
@@ -10,13 +11,20 @@
     "@types/node": "^16.18.9",
     "@types/react": "^18.0.26",
     "@types/react-dom": "^18.0.9",
+    "axios": "^1.2.1",
+    "classnames": "^2.3.2",
+    "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
+    "react-select": "^5.7.0",
+    "sass": "^1.56.2",
     "typescript": "^4.9.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -39,5 +47,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react-select": "^5.0.1"
   }
 }

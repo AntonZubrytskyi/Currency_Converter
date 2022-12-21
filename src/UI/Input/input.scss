@@ -1,0 +1,20 @@
+.input_container {
+  flex: 1;
+}
+
+.input {
+  box-sizing: border-box;
+  border-radius: 10px;
+  background: #F3F3F3;
+  width: 100%;
+
+  &__currency_value {
+    font-size: 18px;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 6px;
+    box-shadow: rgb(0 17 51 / 5%) 0px 3px 15px;
+    padding: 12px;
+    color: rgb(20, 30, 55);
+    background: none;
+  }
+}

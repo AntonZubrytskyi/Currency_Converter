@@ -1,0 +1,35 @@
+.converter-container {
+  margin: 4rem 4rem 0;
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgb(35 55 80 / 30%) 0px 6px 12px;
+  padding: 48px;
+
+  .btn__convert {
+    margin-top: 2rem;
+    margin-left: auto;
+  }
+}
+
+.converter-date {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.converter-select-wrapper {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  .btn__swap {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .converter-select-wrapper {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

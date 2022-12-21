@@ -1,0 +1,31 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  background: transparent;
+
+  &__swap {
+    font-size: 12px;
+    line-height: 22px;
+    color: #1A94E1;
+    gap: 7px;
+    font-weight: 600;
+
+    &::before {
+      content: url('../../icons/Swap.svg');
+      width: 2rem;
+    }
+  }
+  &__convert{
+    padding: 10px 20px;
+    font-size: 1.6rem;
+    color: rgb(255, 255, 255);
+    background: rgb(0, 113, 235);
+    border: 2px solid rgb(0, 113, 235);
+    border-radius: 8px;
+  }
+}

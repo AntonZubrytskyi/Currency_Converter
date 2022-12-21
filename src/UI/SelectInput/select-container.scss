@@ -1,0 +1,19 @@
+.select_container {
+  flex: 1;
+}
+
+.select_title {
+  color: rgb(20, 30, 55);
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.converter_outcome {
+  margin-top: 2rem;
+  .outcome_value {
+    font-size: 3rem;
+    font-weight: 600;
+    color: rgb(46, 60, 87);
+  }
+}
