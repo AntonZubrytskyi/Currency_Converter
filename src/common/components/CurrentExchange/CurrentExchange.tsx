@@ -20,11 +20,11 @@ const CurrentExchange = ({currency}: CurrentExchangeProps) => {
     }, []);
 
     return (
-        <div>
+        <>
             <span className='currency-name'>
                 {currencyStr}
             </span>
-        </div>
+        </>
     );
 };
 

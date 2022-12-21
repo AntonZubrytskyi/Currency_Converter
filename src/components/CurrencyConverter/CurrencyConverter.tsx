@@ -16,7 +16,6 @@ const CurrencyConverter = () => {
     const [exchangeRate, setExchangeRate] = useState<number>(0)
     const [amount, setAmount] = useState<number>(1)
     const [amountInFromCurrency, setAmountInFromCurrency] = useState<boolean>(true)
-    const [date, setDate] = useState('')
 
     let toAmount, fromAmount
     if (amountInFromCurrency) {
@@ -31,7 +30,6 @@ const CurrencyConverter = () => {
         getCurrency('USD').then(data => {
             const firstCurrency = Object.keys(data.rates)[0];
             const currencies = [...Object.keys(data.rates)];
-            setDate(data.date);
             setCurrencyOptions(currencies);
             setFromCurrency(data.base);
             setToCurrency(firstCurrency);
